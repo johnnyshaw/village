@@ -1,0 +1,12 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <include file="struts-default.xml"/>
+    <package name="/sys" namespace="/sys" extends="struts-default">
+    	<action name="user" class="userAction" method="login">
+    		<result type="freemarker" name="success">/sys/index.html</result>
+    	</action>
+    </package>
+</struts>
+

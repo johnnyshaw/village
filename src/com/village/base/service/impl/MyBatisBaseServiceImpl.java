@@ -6,9 +6,9 @@ import java.util.Map;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.johnny.util.ClassUtil;
 import com.village.base.model.BaseModel;
 import com.village.base.service.BaseService;
-import com.village.util.ClassUtil;
 
 public class MyBatisBaseServiceImpl <T extends BaseModel> implements BaseService<T>{
 	

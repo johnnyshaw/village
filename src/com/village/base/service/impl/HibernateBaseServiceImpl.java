@@ -10,9 +10,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.johnny.util.ClassUtil;
 import com.village.base.model.BaseModel;
 import com.village.base.service.BaseService;
-import com.village.util.ClassUtil;
 
 public class HibernateBaseServiceImpl<T extends BaseModel> implements BaseService<T>{
 //public class HibernateBaseServiceImpl<T extends BaseModel> extends AbstractBaseServiceImpl<BaseModel> {//implements BaseService<BaseModel>{

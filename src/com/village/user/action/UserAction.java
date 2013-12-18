@@ -10,13 +10,13 @@ import org.springframework.stereotype.Controller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.village.base.model.VillageUser;
-import com.village.user.service.ITestService;
+import com.village.user.service.IUserService;
 
 @Controller
 public class UserAction extends ActionSupport implements ServletRequestAware,ServletResponseAware{
 	
 	@Autowired
-	ITestService testService;
+	IUserService testService;
 	
 	private HttpServletRequest request; 
     private HttpServletResponse response;

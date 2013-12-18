@@ -7,13 +7,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.village.base.abs.AbstractBaseService;
 import com.village.base.model.VillageUser;
-import com.village.user.service.ITestService;
+import com.village.user.service.IUserService;
 
 @Transactional
 @Service("testService")
 //public class TestServiceImpl extends MyBatisBaseServiceImpl<VillageUser> implements ITestService {
 //public class TestServiceImpl extends HibernateBaseServiceImpl<VillageUser> implements ITestService {
-public class TestServiceImpl extends AbstractBaseService<VillageUser> implements ITestService {
+public class UserServiceImpl extends AbstractBaseService<VillageUser> implements IUserService {
 
 	public List<VillageUser> findAllByParams(){
 		String hql = "from VillageUser";

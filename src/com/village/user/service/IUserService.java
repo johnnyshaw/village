@@ -6,7 +6,7 @@ import java.util.List;
 import com.village.base.model.VillageUser;
 
 //public interface ITestService extends BaseService<BaseModel>{
-public interface ITestService{
+public interface IUserService{
 
 	public List<VillageUser> findAllByParams();
 	
